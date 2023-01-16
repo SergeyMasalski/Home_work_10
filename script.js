@@ -294,10 +294,15 @@ if ((todayYear % 400) != 0 && ((todayYear % 4) != 0 || (todayYear % 100) == 0)) 
                 break
 
             case 12: 
-                if (todayDay == 31) {
+                if (todayDay == 31 && todayYear != (-1)) {
                     nextDay = 1;
                     nextDayMonth = 1;
                     nextDayYear = ++todayYear;
+                    console.log(`Следующий день это дата ${nextDay}.${nextDayMonth}.${nextDayYear}.`);
+                } else if (todayDay == 31 && todayYear == (-1)) {
+                    nextDay = 1;
+                    nextDayMonth = 1;
+                    nextDayYear = 1;
                     console.log(`Следующий день это дата ${nextDay}.${nextDayMonth}.${nextDayYear}.`);
                 } else {
                     nextDay = ++todayDay;

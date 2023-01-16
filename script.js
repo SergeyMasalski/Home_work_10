@@ -20,32 +20,35 @@ let keyboardNumeral = +prompt(' Задание №2\n Введите цифру 
 
 switch (keyboardNumeral) {
     case 1:
-        console.log('Цифре соответсвует спецсивол "!"');
+        console.log(`Цифре ${keyboardNumeral} соответсвует спецсивол "!"`);
         break;
     case 2:
-        console.log('Цифре соответсвует спецсивол "@"');        
+        console.log(`Цифре ${keyboardNumeral} соответсвует спецсивол "@"`);        
         break;
     case 3:
-        console.log('Цифре соответсвует спецсивол "#"');        
+        console.log(`Цифре ${keyboardNumeral} соответсвует спецсивол "#"`);        
         break;
     case 4:
-        console.log('Цифре соответсвует спецсивол "$"');        
+        console.log(`Цифре ${keyboardNumeral} соответсвует спецсивол "$"`);        
         break;
     case 5:
-        console.log('Цифре соответсвует спецсивол "%"');        
+        console.log(`Цифре ${keyboardNumeral} соответсвует спецсивол "%"`);        
         break;
     case 6:
-        console.log('Цифре соответсвует спецсивол "^"');        
+        console.log(`Цифре ${keyboardNumeral} соответсвует спецсивол "^"`);        
         break;
     case 7:
-        console.log('Цифре соответсвует спецсивол "&"');        
+        console.log(`Цифре ${keyboardNumeral} соответсвует спецсивол "&"`);        
         break;
     case 8:
-        console.log('Цифре соответсвует спецсивол "*"');        
+        console.log(`Цифре ${keyboardNumeral} соответсвует спецсивол "*"`);        
         break;
     case 9:
-        console.log('Цифре соответсвует спецсивол "("');        
+        console.log(`Цифре ${keyboardNumeral} соответсвует спецсивол "("`);        
         break;
+    case 0:
+        console.log(`Цифре ${keyboardNumeral} соответсвует спецсивол ")"`);        
+    break;
 
     default:
         break;

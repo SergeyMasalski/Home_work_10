@@ -11,6 +11,8 @@ if (age > 0 && age <= 12) {
     console.log('Пользователь взрослый человек');
 } else if (age >= 60) {
     console.log('Пользователь пенсионер');
+} else {
+    console.log('Пользователь еще не родился');
 }
 
 // Задание №2
@@ -80,7 +82,7 @@ console.log('\nЗадание №4');
 
 let writeYear = +prompt(' Задание №4\n Введите год для определения високосности');
 
-((writeYear % 400) == 0 || ((writeYear % 4) == 0 && (writeYear % 100) != 0)) ? console.log(`${writeYear} год - високосный`) : console.log(`${writeYear} год - невисокосный`);
+(((writeYear % 400) == 0 && writeYear != 0) || ((writeYear % 4) == 0 && (writeYear % 100) != 0 && writeYear != 0)) ? console.log(`${writeYear} год - високосный`) : (writeYear == 0) ? console.log(`${writeYear} года - не существует`) : console.log(`${writeYear} год - невисокосный`);
 
 // // Задание №5
 console.log('\nЗадание №5');
@@ -233,7 +235,7 @@ let todayYear = +prompt( 'Задание №10\nВведите год');
 let nextDay, nextDayMonth, nextDayYear;
 
 if ((todayYear % 400) != 0 && ((todayYear % 4) != 0 || (todayYear % 100) == 0)) {
-    if (todayMonth < 1 || todayMonth > 12 || todayDay <= 0 || todayDay >= 32) {
+    if (todayMonth < 1 || todayMonth > 12 || todayDay <= 0 || todayDay >= 32 || todayYear == 0) {
         console.log(`Введена несуществующая дата ${todayDay}.${todayMonth}.${todayYear}.`);
     } else {
         switch (todayMonth) {
@@ -309,7 +311,7 @@ if ((todayYear % 400) != 0 && ((todayYear % 4) != 0 || (todayYear % 100) == 0)) 
         }
     }
 } else {
-    if (todayMonth < 1 || todayMonth > 12 || todayDay <= 0 || todayDay >= 32) {
+    if (todayMonth < 1 || todayMonth > 12 || todayDay <= 0 || todayDay >= 32 || todayYear == 0) {
         console.log(`Введена несуществующая дата ${todayDay}.${todayMonth}.${todayYear}.`);
     } else {
         switch (todayMonth) {
